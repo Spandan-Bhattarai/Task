@@ -17,7 +17,7 @@ This repository contains the solution for the Backend Internship Assignment prov
 
 ---
 
-## 📁 Folder Structure
+##  Folder Structure
 
 - app.py # Flask application for blog APIs
 -  pair_sum.py # Function to find a pair with a given sum
