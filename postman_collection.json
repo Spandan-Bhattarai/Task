@@ -1,0 +1,82 @@
+{
+  "info": {
+    "name": "Blog API Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Blogs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/blogs",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["blogs"]
+        }
+      }
+    },
+    {
+      "name": "Get Blog by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/blogs/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["blogs", "1"]
+        }
+      }
+    },
+    {
+      "name": "Create Blog",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Test Blog\",\n  \"description\": \"This is a sample blog.\",\n  \"category\": \"Tech\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/blogs",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["blogs"]
+        }
+      }
+    },
+    {
+      "name": "Update Blog",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Updated Blog\",\n  \"description\": \"Updated description.\",\n  \"category\": \"Update\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/blogs/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["blogs", "1"]
+        }
+      }
+    }
+  ]
+}
